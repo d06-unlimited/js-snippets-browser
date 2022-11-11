@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operators Demo</title>
+  <script defer src="./script.js"></script>
+  <style>
+
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .login-form {
+      margin: auto;
+      padding: 30px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .dashboard, .error {
+      display: none;
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+    
+
+  </style>
+</head>
+<body>
+
+  <form class="login-form">
+    <h2>Login buddy!</h2>
+    <input name="email" type="text" placeholder="Email..." />
+    <input name="password" type="password" placeholder="Password..." />
+    <button class="btn-login" type="button" class="login">Login</button>
+  </form>
+
+
+  <div class="dashboard">
+    Hallo User. Willkommen daheim!
+  </div>
+  <div class="error">
+    Login-Daten falsch!
+  </div>
+  
+</body>
+</html>
