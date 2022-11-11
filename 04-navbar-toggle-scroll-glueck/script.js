@@ -12,10 +12,9 @@ window.addEventListener("scroll", function() {
   // if we scroll down to a certain position in scroll area
   // => hide navbar
   if (root.scrollTop > 200) {
-    // console.log("Scroll Top:", root.scrollTop, root.scrollHeight)
-    // nav.style.display = "none";
-    // nav.style.opacity = 0
-    nav.style.translate = "0 -15vh";
+    // nav.style.display = "none"; // hide item completely
+    // nav.style.opacity = 0 // just make invisibile
+    nav.style.translate = "0 -15vh"; // fade out of screen! niceeeee
   }
   // if we scrol up to a certain position in scroll area
   // => show navbar
