@@ -39,6 +39,8 @@ const displayPizzas = (arrPizzas) => {
 displayPizzas(arrPizzas);
 
 
+// function myName() === const myName = () => {} 
+// () => {} // anynomous function
 
 // Search on user input
 elSearch.addEventListener("input", () => {
