@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Demo using Loops</title>
+  <script defer src="./script.js"></script>
+  <style>
+    input[name='search'] {
+      padding: 10px;
+    }
+
+    .pizzas > div {
+      width: 100px;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: olivedrab;
+      text-align: center;
+      color: wheat;
+      font-size: 1.3rem;
+    }
+
+    .pizzas > div:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Searching like there is no mornin'</h1>
+
+  <div>
+    <input type="text" name="search" class="search" autocomplete="off" placeholder="Suchen! Jetzt...">
+    <div class="pizzas">
+
+    </div>
+  </div>
+  
+</body>
+</html>
