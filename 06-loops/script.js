@@ -54,7 +54,8 @@ elSearch.addEventListener("input", () => {
   // check which one includes the search term
   // show only the matching items
   for(let i=0; i<arrPizzas.length; i++) {
-    // check which item includes searchTerm
+
+    // grab the current item we loop over... and store it in variable
     const currentPizza = arrPizzas[i]
 
     // check if searchTerm is INCLUDED in currentPizza
