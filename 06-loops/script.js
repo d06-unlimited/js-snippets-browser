@@ -17,7 +17,7 @@ const elPizzasContainer = document.querySelector(".pizzas")
 // DATA
 const arrPizzas = ["Funghi", "Hawaii", "Hotdog", "Choco", "Salami", "Tuna", "Nutella"];
 
-// function displayPizzas() {}
+// dasselbe wie: function displayPizzas() {} 
 const displayPizzas = (arrPizzas) => {
   elPizzasContainer.innerHTML = ""; // clear container
 
@@ -39,8 +39,8 @@ const displayPizzas = (arrPizzas) => {
 displayPizzas(arrPizzas);
 
 
-// function myName() === const myName = () => {} 
-// () => {} // anynomous function
+// Named Function: function myName() oder const myName = () => {} 
+// anynomous function: () => {} (kein Name)
 
 // Search on user input
 elSearch.addEventListener("input", () => {
