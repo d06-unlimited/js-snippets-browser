@@ -34,12 +34,12 @@ const buttonBuy = document.querySelector("button")
 const inputBetrag = document.querySelector("input[name='betrag']")
 const result = document.querySelector(".result")
 
-// loope over coffees
-// wandle jedes coffee object in ein DIV um
-// let htmlCoffees = "";
 
 // store coffee choice here (Outside of loop!)
 let coffeeChoice
+
+// loope over coffees
+// wandle jedes coffee object in ein DIV um
 
 for (let coffee of coffees) {
   const coffeeCard = document.createElement("div")  
