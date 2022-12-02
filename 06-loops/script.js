@@ -17,7 +17,7 @@ const elPizzasContainer = document.querySelector(".pizzas")
 // DATA
 const arrPizzas = ["Funghi", "Hawaii", "Hotdog", "Choco", "Salami", "Tuna", "Nutella"];
 
-// function displayPizzas() {}
+// dasselbe wie: function displayPizzas() {} 
 const displayPizzas = (arrPizzas) => {
   elPizzasContainer.innerHTML = ""; // clear container
 
@@ -39,8 +39,8 @@ const displayPizzas = (arrPizzas) => {
 displayPizzas(arrPizzas);
 
 
-// function myName() === const myName = () => {} 
-// () => {} // anynomous function
+// Named Function: function myName() oder const myName = () => {} 
+// anynomous function: () => {} (kein Name)
 
 // Search on user input
 elSearch.addEventListener("input", () => {
@@ -54,7 +54,8 @@ elSearch.addEventListener("input", () => {
   // check which one includes the search term
   // show only the matching items
   for(let i=0; i<arrPizzas.length; i++) {
-    // check which item includes searchTerm
+
+    // grab the current item we loop over... and store it in variable
     const currentPizza = arrPizzas[i]
 
     // check if searchTerm is INCLUDED in currentPizza
