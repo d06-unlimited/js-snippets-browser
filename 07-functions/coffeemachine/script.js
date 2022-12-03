@@ -45,11 +45,12 @@ for (let coffee of coffees) {
   const coffeeCard = document.createElement("div")  
   coffeeCard.className = "coffee"
 
-  coffeeCard.innerHTML = `<div>
-                      <img src="${coffee.image}" />
-                    </div>
-                    <div>${coffee.name}</div>
-                    <div>${coffee.price}</div>
+  coffeeCard.innerHTML = `
+    <div>
+      <img src="${coffee.image}" />
+    </div>
+    <div>${coffee.name}</div>
+    <div>${coffee.price}</div>
   `;
 
   // add click listener to coffee DIV
