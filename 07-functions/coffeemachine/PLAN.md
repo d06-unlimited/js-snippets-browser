@@ -11,8 +11,7 @@
   - speichere ausgewählten Kaffee in Variable
 - KAUFE Kaffee (Button)
   - Checke Geld Input vom User (=> INPUT Feld)
-  - Suche Kaffee in Array => LOOPE durch Array
-  - Gucke ob Geld reicht => IF geld >= price
+  - Gucke ob Geld für ausgewählen reicht => IF geld >= price von ausgewähltem Kaffee
     - Wenn reicht: Gib Kaffee aus!
     - Wenn nicht reicht: Destroy User!
 
