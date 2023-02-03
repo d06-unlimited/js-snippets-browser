@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul {
+      padding: 20px;
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+
+  <ul>
+    <li>Produkt 1</li>
+    <li>Produkt 2</li>
+    <li>Produkt 3</li>
+    <li>Produkt 4</li>
+    <li>Produkt 5</li>
+l  </ul>
+
+  <button>Add Produkt</button>
+
+
+  <script>
+
+    // fetch ALL li elements from DOM
+    const lis = document.querySelectorAll("li")
+    const ul = document.querySelector("ul")
+    const btn = document.querySelector("button")
+
+    const onLiItemClick = (e) => {
+      // stop that f*** child element from talking up to its parent!
+      e.stopPropagation() 
+
+      // event.target => the element that TRIGGERED the event
+      console.log("LI clicked", e.target)
+      e.target.style.textDecoration = "line-through"
+    }
+
+    btn.addEventListener("click", () => {
+      // create new LI item for UL
+      const liNew = document.createElement("li")
+      // put some content rein!
+      liNew.innerText = "Produkt " + Math.random()
+
+      // attach event listener
+      liNew.addEventListener("click", onLiItemClick)
+
+      // append the new LI to the end of UL
+      ul.appendChild(liNew)
+    })
+
+    ul.addEventListener("click", (e) => {
+      console.log("UL clicked", e.target)
+    })
+
+    // loop through li elements
+    // and add to each li an click listener
+    lis.forEach(li => {
+      li.addEventListener("click", onLiItemClick)
+    })
+
+  </script>
+</body>
+
+</html>

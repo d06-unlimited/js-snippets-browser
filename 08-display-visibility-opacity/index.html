@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Visibility Modes</title>
+  <style>
+    *,
+    ::before,
+    ::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    div {
+      height: 150px;
+      width: 200px;
+      background-color: yellow;
+      display: grid;
+      place-items: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 2rem;
+
+      cursor: pointer;
+    }
+
+    body>div {
+      border: 1px solid black;
+    }
+
+    .display {
+      display: none;
+    }
+
+    .visibility {
+      visibility: hidden;
+    }
+
+    .opacity {
+      opacity: 0;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div>
+    <div class="display">Display</div>
+  </div>
+  <div>
+    <div class="visibility">Visibility</div>
+  </div>
+  <div>
+    <div class="opacity">Opacity</div>
+  </div>
+
+  <script>
+
+    const divDisplay = document.querySelector(".display")
+    const divVisibility = document.querySelector(".visibility")
+    const divOpacity = document.querySelector(".opacity")
+
+    divDisplay.addEventListener("click", (e) => {
+      console.log(e.target, "clicked (display)")
+    })
+
+    divVisibility.addEventListener("click", (e) => {
+      console.log(e.target, "clicked (visibility)")
+    })
+
+    divOpacity.addEventListener("click", (e) => {
+      console.log(e.target, "clicked (opacity)")
+      divOpacity.style.textDecoration = 'line-through'
+      divOpacity.style.opacity = 1
+    })
+
+  </script>
+
+</body>
+
+</html>
