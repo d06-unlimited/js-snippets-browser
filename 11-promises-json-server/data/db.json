@@ -1,0 +1,14 @@
+{
+  "students": [
+    { "_id": "s1", "name": "Yasin" },
+    { "_id": "s2", "name": "Roberto" },
+    { "_id": "s3", "name": "Joel" },
+    { "_id": "s4", "name": "Alex" },
+    { "_id": "s5", "name": "Maddy" },
+    { "_id": "s6", "name": "Steven" },
+    { "_id": "s7", "name": "Claudia" }
+  ],
+  "todos": [
+    "T1", "T2", "T3"
+  ]
+}
